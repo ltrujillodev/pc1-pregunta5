@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PC1 :: Pregunta 5</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Pregunta 5</h1>
+    <div>
+      <label for="nombre">Nombre:</label>
+      <br />
+      <input type="text" id="nombre" placeholder="Tu nombre" required />
+
+      <br />
+      <br />
+
+      <label for="comentario">Comentario:</label>
+      <br />
+      <textarea
+        id="comentario"
+        rows="4"
+        cols="50"
+        placeholder="Escribe tu comentario"
+        required
+      ></textarea>
+
+      <br />
+      <br />
+
+      <button onclick="publicarComentario()">Publicar Comentario</button>
+    </div>
+
+    <div id="comments-section">
+      <h2>Comentarios:</h2>
+      <div id="comments-container"></div>
+    </div>
+
+    <script src="pc1-pregunta5.js"></script>
+  </body>
+</html>
